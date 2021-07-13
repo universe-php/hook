@@ -1,0 +1,31 @@
+{
+  "name": "universe/hook",
+  "type": "composer-plugin",
+  "description": "Composer plugin for Universe",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Volkan Şengül",
+      "email": "iletisim@volkansengul.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1",
+    "composer-plugin-api": "^1.0|^2.0"
+  },
+  "require-dev": {
+    "composer/composer": "^1.0.2|^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Universe\\Hook\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0-dev"
+    },
+    "class": "Universe\\Hook\\Hook"
+  }
+}
