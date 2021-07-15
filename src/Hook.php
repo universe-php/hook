@@ -40,6 +40,7 @@ class Hook implements PluginInterface, EventSubscriberInterface {
     }
 
     public function installOrUpdate($event){
+        print_r($event);
         file_put_contents($this->rootDir.DIRECTORY_SEPARATOR.'ok.php','abcd');
         echo 'file added';
     }
